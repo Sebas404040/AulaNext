@@ -1,0 +1,11 @@
+use AulaNext
+
+db.createCollection("usuarios")
+
+db.createCollection("cursos)
+
+db.createCollection("reseñas")
+
+db.createCollection("inscripciones")
+
+db.createCollection("pagos")
