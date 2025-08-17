@@ -1,0 +1,228 @@
+db.pagos.insertMany([
+  {
+    "_id": "payment-001",
+    "usuario_id": "1023456789",
+    "curso_id": "CURS-007",
+    "inscripcion_id": "INS-001",
+    "monto": 120.00,
+    "moneda": "USD",
+    "metodo_pago": "tarjeta_credito",
+    "estado": "completado",
+    "fecha_pago": new Date("2025-01-15T12:30:00Z"),
+    "detalles": {
+      "referencia_transaccion": "TXN10001",
+      "proveedor": "Stripe"
+    }
+  },
+  {
+    "_id": "payment-002",
+    "usuario_id": "4056789012",
+    "curso_id": "CURS-002",
+    "inscripcion_id": "INS-002",
+    "monto": 95.00,
+    "moneda": "USD",
+    "metodo_pago": "paypal",
+    "estado": "completado",
+    "fecha_pago": new Date("2025-02-02T09:45:00Z"),
+    "detalles": {
+      "referencia_transaccion": "TXN10002",
+      "proveedor": "PayPal"
+    }
+  },
+  {
+    "_id": "payment-003",
+    "usuario_id": "1023456780",
+    "curso_id": "CURS-005",
+    "inscripcion_id": "INS-003",
+    "monto": 110.00,
+    "moneda": "USD",
+    "metodo_pago": "transferencia",
+    "estado": "pendiente",
+    "fecha_pago": new Date("2025-02-11T14:00:00Z"),
+    "detalles": {
+      "referencia_transaccion": "TXN10003",
+      "proveedor": "BancoLocal"
+    }
+  },
+  {
+    "_id": "payment-004",
+    "usuario_id": "4056789012",
+    "curso_id": "CURS-007",
+    "inscripcion_id": "INS-004",
+    "monto": 120.00,
+    "moneda": "USD",
+    "metodo_pago": "tarjeta_credito",
+    "estado": "pendiente",
+    "fecha_pago": new Date("2025-03-01T08:15:00Z"),
+    "detalles": {
+      "referencia_transaccion": "TXN10004",
+      "proveedor": "Stripe"
+    }
+  },
+  {
+    "_id": "payment-005",
+    "usuario_id": "1315678901",
+    "curso_id": "CURS-009",
+    "inscripcion_id": "INS-005",
+    "monto": 150.00,
+    "moneda": "USD",
+    "metodo_pago": "paypal",
+    "estado": "completado",
+    "fecha_pago": new Date("2025-03-12T10:20:00Z"),
+    "detalles": {
+      "referencia_transaccion": "TXN10005",
+      "proveedor": "PayPal",
+    }
+  },
+  {
+    "_id": "payment-006",
+    "usuario_id": "4056789012",
+    "curso_id": "CURS-010",
+    "inscripcion_id": "INS-006",
+    "monto": 135.00,
+    "moneda": "USD",
+    "metodo_pago": "tarjeta_credito",
+    "estado": "completado",
+    "fecha_pago": new Date("2025-03-20T11:50:00Z"),
+    "detalles": {
+      "referencia_transaccion": "TXN10006",
+      "proveedor": "Stripe"
+    }
+  },
+  {
+    "_id": "payment-007",
+    "usuario_id": "1416789012",
+    "curso_id": "CURS-007",
+    "inscripcion_id": "INS-007",
+    "monto": 120.00,
+    "moneda": "USD",
+    "metodo_pago": "transferencia",
+    "estado": "completado",
+    "fecha_pago": new Date("2025-04-05T16:30:00Z"),
+    "detalles": {
+      "referencia_transaccion": "TXN10007",
+      "proveedor": "BancoLocal"
+    }
+  },
+  {
+    "_id": "payment-008",
+    "usuario_id": "1023456789",
+    "curso_id": "CURS-008",
+    "inscripcion_id": "INS-008",
+    "monto": 140.00,
+    "moneda": "USD",
+    "metodo_pago": "paypal",
+    "estado": "reembolsado",
+    "fecha_pago": new Date("2025-04-15T13:10:00Z"),
+    "detalles": {
+      "referencia_transaccion": "TXN10008",
+      "proveedor": "PayPal"
+    }
+  },
+  {
+    "_id": "payment-009",
+    "usuario_id": "3045678901",
+    "curso_id": "CURS-006",
+    "inscripcion_id": "INS-009",
+    "monto": 100.00,
+    "moneda": "USD",
+    "metodo_pago": "tarjeta_credito",
+    "estado": "completado",
+    "fecha_pago": new Date("2025-04-25T09:00:00Z"),
+    "detalles": {
+      "referencia_transaccion": "TXN10009",
+      "proveedor": "Stripe"
+    }
+  },
+  {
+    "_id": "payment-010",
+    "usuario_id": "4056789012",
+    "curso_id": "CURS-004",
+    "inscripcion_id": "INS-010",
+    "monto": 130.00,
+    "moneda": "USD",
+    "metodo_pago": "paypal",
+    "estado": "pendiente",
+    "fecha_pago": new Date("2025-05-01T15:25:00Z"),
+    "detalles": {
+      "referencia_transaccion": "TXN10010",
+      "proveedor": "PayPal"
+    }
+  },
+  {
+    "_id": "payment-011",
+    "usuario_id": "1214567890",
+    "curso_id": "CURS-001",
+    "inscripcion_id": "INS-011",
+    "monto": 85.00,
+    "moneda": "USD",
+    "metodo_pago": "tarjeta_credito",
+    "estado": "completado",
+    "fecha_pago": new Date("2025-05-10T08:40:00Z"),
+    "detalles": {
+      "referencia_transaccion": "TXN10011",
+      "proveedor": "Stripe"
+    }
+  },
+  {
+    "_id": "payment-012",
+    "usuario_id": "1012345678",
+    "curso_id": "CURS-003",
+    "inscripcion_id": "INS-012",
+    "monto": 115.00,
+    "moneda": "USD",
+    "metodo_pago": "paypal",
+    "estado": "completado",
+    "fecha_pago": new Date("2025-05-18T19:30:00Z"),
+    "detalles": {
+      "referencia_transaccion": "TXN10012",
+      "proveedor": "PayPal"
+    }
+  },
+  {
+    "_id": "payment-013",
+    "usuario_id": "1123456780",
+    "curso_id": "CURS-006",
+    "inscripcion_id": "INS-013",
+    "monto": 100.00,
+    "moneda": "USD",
+    "metodo_pago": "transferencia",
+    "estado": "completado",
+    "fecha_pago": new Date("2025-06-01T12:00:00Z"),
+    "detalles": {
+      "referencia_transaccion": "TXN10013",
+      "proveedor": "BancoLocal"
+    }
+  },
+  {
+    "_id": "payment-014",
+    "usuario_id": "1134567891",
+    "curso_id": "CURS-009",
+    "inscripcion_id": "INS-014",
+    "monto": 150.00,
+    "moneda": "USD",
+    "metodo_pago": "tarjeta_credito",
+    "estado": "reembolsado",
+    "fecha_pago": new Date("2025-06-05T11:15:00Z"),
+    "detalles": {
+      "referencia_transaccion": "TXN10014",
+      "proveedor": "Stripe"
+    }
+  },
+  {
+    "_id": "Payment-015",
+    "usuario_id": "8090123456",
+    "curso_id": "CURS-002",
+    "inscripcion_id": "INS-015",
+    "monto": 95.00,
+    "moneda": "USD",
+    "metodo_pago": "paypal",
+    "estado": "completado",
+    "fecha_pago": new Date("2025-06-10T14:45:00Z"),
+    "detalles": {
+      "referencia_transaccion": "TXN10015",
+      "proveedor": "PayPal"
+    }
+  }
+]
+)
