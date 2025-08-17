@@ -9,10 +9,7 @@ db.usuarios.insertMany([
     "fecha_registro": "2025-06-01",
     "intereses": ["programación", "data science"],
     "estado": "activo",
-    "perfil": {
-      "biografia": "Estudiante apasionado por el backend y bases de datos.",
-      "foto": "sebas.jpg"
-    }
+    "biografia": "Estudiante apasionado por el backend y bases de datos."
   },
   {
     "_id": "2034567890",
@@ -23,10 +20,7 @@ db.usuarios.insertMany([
     "fecha_registro": "2025-04-15",
     "intereses": ["bases de datos", "big data", "docker", "contenedorización"],
     "estado": "activo",
-    "perfil": {
-      "biografia": "Profesora con 10 años de experiencia en sistemas distribuidos.",
-      "foto": "laura.jpg"
-    }
+    "biografia": "Profesora con 10 años de experiencia en sistemas distribuidos."
   },
   {
     "_id": "3045678901",
@@ -37,10 +31,7 @@ db.usuarios.insertMany([
     "fecha_registro": "2025-07-10",
     "intereses": ["ciberseguridad", "redes"],
     "estado": "activo",
-    "perfil": {
-      "biografia": "Apasionado por la seguridad informática y la protección de datos.",
-      "foto": "andres.jpg"
-    }
+    "biografia": "Apasionado por la seguridad informática y la protección de datos."
   },
   {
     "_id": "4056789012",
@@ -51,10 +42,7 @@ db.usuarios.insertMany([
     "fecha_registro": "2025-05-22",
     "intereses": ["frontend", "ux/ui"],
     "estado": "activo",
-    "perfil": {
-      "biografia": "Creativa, amante del diseño y la experiencia de usuario.",
-      "foto": "maria.jpg"
-    }
+    "biografia": "Creativa, amante del diseño y la experiencia de usuario."
   },
   {
     "_id": "5067890123",
@@ -65,10 +53,7 @@ db.usuarios.insertMany([
     "fecha_registro": "2025-03-01",
     "intereses": ["inteligencia artificial", "machine learning", "diseño UX/UI"],
     "estado": "activo",
-    "perfil": {
-      "biografia": "Profesor universitario, investigador en IA aplicada.",
-      "foto": "carlos.jpg"
-    }
+    "biografia": "Profesor universitario, investigador en IA aplicada."
   },
   {
     "_id": "6078901234",
@@ -79,10 +64,7 @@ db.usuarios.insertMany([
     "fecha_registro": "2025-06-12",
     "intereses": ["data science", "estadística"],
     "estado": "activo",
-    "perfil": {
-      "biografia": "Estudiante entusiasta de los datos y su aplicación en negocios.",
-      "foto": "ana.jpg"
-    }
+    "biografia": "Estudiante entusiasta de los datos y su aplicación en negocios."
   },
   {
     "_id": "7089012345",
@@ -93,10 +75,7 @@ db.usuarios.insertMany([
     "fecha_registro": "2025-02-20",
     "intereses": ["cloud computing", "devops"],
     "estado": "activo",
-    "perfil": {
-      "biografia": "Especialista en arquitecturas en la nube y metodologías ágiles.",
-      "foto": "jose.jpg"
-    }
+    "biografia": "Especialista en arquitecturas en la nube y metodologías ágiles."
   },
   {
     "_id": "8090123456",
@@ -107,10 +86,7 @@ db.usuarios.insertMany([
     "fecha_registro": "2025-07-05",
     "intereses": ["programación móvil", "flutter"],
     "estado": "activo",
-    "perfil": {
-      "biografia": "Aprendiendo a crear apps innovadoras y funcionales.",
-      "foto": "valentina.jpg"
-    }
+    "biografia": "Aprendiendo a crear apps innovadoras y funcionales."
   },
   {
     "_id": "9101234567",
@@ -121,10 +97,7 @@ db.usuarios.insertMany([
     "fecha_registro": "2025-01-10",
     "intereses": ["big data", "etl", "desarrollo web"],
     "estado": "activo",
-    "perfil": {
-      "biografia": "Profesor con experiencia en procesamiento de grandes volúmenes de datos.",
-      "foto": "luis.jpg"
-    }
+    "biografia": "Profesor con experiencia en procesamiento de grandes volúmenes de datos."
   },
   {
     "_id": "1012345678",
@@ -135,10 +108,7 @@ db.usuarios.insertMany([
     "fecha_registro": "2025-08-01",
     "intereses": ["python", "automatización"],
     "estado": "activo",
-    "perfil": {
-      "biografia": "Amante de la programación y la eficiencia en procesos.",
-      "foto": "camila.jpg"
-    }
+    "biografia": "Amante de la programación y la eficiencia en procesos."
   },
   {
     "_id": "1113456789",
@@ -149,10 +119,7 @@ db.usuarios.insertMany([
     "fecha_registro": "2025-03-30",
     "intereses": ["redes neuronales", "deep learning"],
     "estado": "activo",
-    "perfil": {
-      "biografia": "Investigador y docente en inteligencia artificial avanzada.",
-      "foto": "ricardo.jpg"
-    }
+    "biografia": "Investigador y docente en inteligencia artificial avanzada."
   },
   {
     "_id": "1214567890",
@@ -163,10 +130,7 @@ db.usuarios.insertMany([
     "fecha_registro": "2025-07-15",
     "intereses": ["bases de datos", "sql"],
     "estado": "activo",
-    "perfil": {
-      "biografia": "Apasionada por la organización de la información.",
-      "foto": "paula.jpg"
-    }
+    "biografia": "Apasionada por la organización de la información."
   },
   {
     "_id": "1315678901",
@@ -177,10 +141,7 @@ db.usuarios.insertMany([
     "fecha_registro": "2025-05-25",
     "intereses": ["java", "backend"],
     "estado": "activo",
-    "perfil": {
-      "biografia": "Interesado en el desarrollo de sistemas robustos.",
-      "foto": "julian.jpg"
-    }
+    "biografia": "Interesado en el desarrollo de sistemas robustos."
   },
   {
     "_id": "1416789012",
@@ -191,10 +152,7 @@ db.usuarios.insertMany([
     "fecha_registro": "2025-06-29",
     "intereses": ["ciencia de datos", "r"],
     "estado": "activo",
-    "perfil": {
-      "biografia": "Curiosa por descubrir patrones en los datos.",
-      "foto": "gabriela.jpg"
-    }
+    "biografia": "Curiosa por descubrir patrones en los datos."
   },
   {
     "_id": "1517890123",
@@ -205,10 +163,7 @@ db.usuarios.insertMany([
     "fecha_registro": "2025-04-05",
     "intereses": ["seguridad informática", "criptografía"],
     "estado": "activo",
-    "perfil": {
-      "biografia": "Docente con trayectoria en seguridad digital y encriptación.",
-      "foto": "diego.jpg"
-    }
+    "biografia": "Docente con trayectoria en seguridad digital y encriptación."
   }
 ]
 )
