@@ -1,4 +1,4 @@
-db.pagos.insertMany([
+[
   {
     "_id": "payment-001",
     "usuario_id": "1023456789",
@@ -8,7 +8,7 @@ db.pagos.insertMany([
     "moneda": "USD",
     "metodo_pago": "tarjeta_credito",
     "estado": "completado",
-    "fecha_pago": new Date("2025-01-15T12:30:00Z"),
+    "fecha_pago": { "$date": "2025-01-15T12:30:00Z" },
     "detalles": {
       "referencia_transaccion": "TXN10001",
       "proveedor": "Stripe"
@@ -23,7 +23,7 @@ db.pagos.insertMany([
     "moneda": "USD",
     "metodo_pago": "paypal",
     "estado": "completado",
-    "fecha_pago": new Date("2025-02-02T09:45:00Z"),
+    "fecha_pago": { "$date": "2025-02-02T09:45:00Z" },
     "detalles": {
       "referencia_transaccion": "TXN10002",
       "proveedor": "PayPal"
@@ -38,7 +38,7 @@ db.pagos.insertMany([
     "moneda": "USD",
     "metodo_pago": "transferencia",
     "estado": "pendiente",
-    "fecha_pago": new Date("2025-02-11T14:00:00Z"),
+    "fecha_pago": { "$date": "2025-02-11T14:00:00Z" },
     "detalles": {
       "referencia_transaccion": "TXN10003",
       "proveedor": "BancoLocal"
@@ -53,7 +53,7 @@ db.pagos.insertMany([
     "moneda": "USD",
     "metodo_pago": "tarjeta_credito",
     "estado": "pendiente",
-    "fecha_pago": new Date("2025-03-01T08:15:00Z"),
+    "fecha_pago": { "$date": "2025-03-01T08:15:00Z" },
     "detalles": {
       "referencia_transaccion": "TXN10004",
       "proveedor": "Stripe"
@@ -68,10 +68,10 @@ db.pagos.insertMany([
     "moneda": "USD",
     "metodo_pago": "paypal",
     "estado": "completado",
-    "fecha_pago": new Date("2025-03-12T10:20:00Z"),
+    "fecha_pago": { "$date": "2025-03-12T10:20:00Z" },
     "detalles": {
       "referencia_transaccion": "TXN10005",
-      "proveedor": "PayPal",
+      "proveedor": "PayPal"
     }
   },
   {
@@ -83,7 +83,7 @@ db.pagos.insertMany([
     "moneda": "USD",
     "metodo_pago": "tarjeta_credito",
     "estado": "completado",
-    "fecha_pago": new Date("2025-03-20T11:50:00Z"),
+    "fecha_pago": { "$date": "2025-03-20T11:50:00Z" },
     "detalles": {
       "referencia_transaccion": "TXN10006",
       "proveedor": "Stripe"
@@ -98,7 +98,7 @@ db.pagos.insertMany([
     "moneda": "USD",
     "metodo_pago": "transferencia",
     "estado": "completado",
-    "fecha_pago": new Date("2025-04-05T16:30:00Z"),
+    "fecha_pago": { "$date": "2025-04-05T16:30:00Z" },
     "detalles": {
       "referencia_transaccion": "TXN10007",
       "proveedor": "BancoLocal"
@@ -113,7 +113,7 @@ db.pagos.insertMany([
     "moneda": "USD",
     "metodo_pago": "paypal",
     "estado": "reembolsado",
-    "fecha_pago": new Date("2025-04-15T13:10:00Z"),
+    "fecha_pago": { "$date": "2025-04-15T13:10:00Z" },
     "detalles": {
       "referencia_transaccion": "TXN10008",
       "proveedor": "PayPal"
@@ -128,7 +128,7 @@ db.pagos.insertMany([
     "moneda": "USD",
     "metodo_pago": "tarjeta_credito",
     "estado": "completado",
-    "fecha_pago": new Date("2025-04-25T09:00:00Z"),
+    "fecha_pago": { "$date": "2025-04-25T09:00:00Z" },
     "detalles": {
       "referencia_transaccion": "TXN10009",
       "proveedor": "Stripe"
@@ -143,7 +143,7 @@ db.pagos.insertMany([
     "moneda": "USD",
     "metodo_pago": "paypal",
     "estado": "pendiente",
-    "fecha_pago": new Date("2025-05-01T15:25:00Z"),
+    "fecha_pago": { "$date": "2025-05-01T15:25:00Z" },
     "detalles": {
       "referencia_transaccion": "TXN10010",
       "proveedor": "PayPal"
@@ -158,7 +158,7 @@ db.pagos.insertMany([
     "moneda": "USD",
     "metodo_pago": "tarjeta_credito",
     "estado": "completado",
-    "fecha_pago": new Date("2025-05-10T08:40:00Z"),
+    "fecha_pago": { "$date": "2025-05-10T08:40:00Z" },
     "detalles": {
       "referencia_transaccion": "TXN10011",
       "proveedor": "Stripe"
@@ -173,7 +173,7 @@ db.pagos.insertMany([
     "moneda": "USD",
     "metodo_pago": "paypal",
     "estado": "completado",
-    "fecha_pago": new Date("2025-05-18T19:30:00Z"),
+    "fecha_pago": { "$date": "2025-05-18T19:30:00Z" },
     "detalles": {
       "referencia_transaccion": "TXN10012",
       "proveedor": "PayPal"
@@ -188,7 +188,7 @@ db.pagos.insertMany([
     "moneda": "USD",
     "metodo_pago": "transferencia",
     "estado": "completado",
-    "fecha_pago": new Date("2025-06-01T12:00:00Z"),
+    "fecha_pago": { "$date": "2025-06-01T12:00:00Z" },
     "detalles": {
       "referencia_transaccion": "TXN10013",
       "proveedor": "BancoLocal"
@@ -203,7 +203,7 @@ db.pagos.insertMany([
     "moneda": "USD",
     "metodo_pago": "tarjeta_credito",
     "estado": "reembolsado",
-    "fecha_pago": new Date("2025-06-05T11:15:00Z"),
+    "fecha_pago": { "$date": "2025-06-05T11:15:00Z" },
     "detalles": {
       "referencia_transaccion": "TXN10014",
       "proveedor": "Stripe"
@@ -218,11 +218,11 @@ db.pagos.insertMany([
     "moneda": "USD",
     "metodo_pago": "paypal",
     "estado": "completado",
-    "fecha_pago": new Date("2025-06-10T14:45:00Z"),
+    "fecha_pago": { "$date": "2025-06-10T14:45:00Z" },
     "detalles": {
       "referencia_transaccion": "TXN10015",
       "proveedor": "PayPal"
     }
   }
 ]
-)
+

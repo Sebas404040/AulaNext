@@ -1,12 +1,12 @@
-// Insercion de los usuarios
-db.usuarios.insertMany([
+
+[
   {
     "_id": "1023456789",
     "nombre": "Sebastián Delgado",
-    "email": "sebas@mail.com",
+    "email": "sebas@gmail.com",
     "rol": "estudiante",
     "pais": "Colombia",
-    "fecha_registro": "2025-06-01",
+    "fecha_registro": { "$date": "2025-06-01T00:00:00Z" },
     "intereses": ["programación", "data science"],
     "estado": "activo",
     "biografia": "Estudiante apasionado por el backend y bases de datos."
@@ -17,7 +17,7 @@ db.usuarios.insertMany([
     "email": "laura@aulantx.com",
     "rol": "profesor",
     "pais": "México",
-    "fecha_registro": "2025-04-15",
+    "fecha_registro": { "$date": "2025-04-15T00:00:00Z" },
     "intereses": ["bases de datos", "big data", "docker", "contenedorización"],
     "estado": "activo",
     "biografia": "Profesora con 10 años de experiencia en sistemas distribuidos."
@@ -25,10 +25,10 @@ db.usuarios.insertMany([
   {
     "_id": "3045678901",
     "nombre": "Andrés Gómez",
-    "email": "andres.gomez@mail.com",
+    "email": "andres_gomez@outlook.com",
     "rol": "estudiante",
     "pais": "Chile",
-    "fecha_registro": "2025-07-10",
+    "fecha_registro": { "$date": "2025-07-10T00:00:00Z" },
     "intereses": ["ciberseguridad", "redes"],
     "estado": "activo",
     "biografia": "Apasionado por la seguridad informática y la protección de datos."
@@ -36,10 +36,10 @@ db.usuarios.insertMany([
   {
     "_id": "4056789012",
     "nombre": "María Fernanda Ruiz",
-    "email": "maria.ruiz@mail.com",
+    "email": "maria_ruiz@outlook.com",
     "rol": "estudiante",
     "pais": "Argentina",
-    "fecha_registro": "2025-05-22",
+    "fecha_registro": { "$date": "2025-05-22T00:00:00Z" },
     "intereses": ["frontend", "ux/ui"],
     "estado": "activo",
     "biografia": "Creativa, amante del diseño y la experiencia de usuario."
@@ -47,10 +47,10 @@ db.usuarios.insertMany([
   {
     "_id": "5067890123",
     "nombre": "Carlos López",
-    "email": "carlos.lopez@mail.com",
+    "email": "carlos.lopez@gmail.com",
     "rol": "profesor",
     "pais": "Colombia",
-    "fecha_registro": "2025-03-01",
+    "fecha_registro": { "$date": "2025-03-01T00:00:00Z" },
     "intereses": ["inteligencia artificial", "machine learning", "diseño UX/UI"],
     "estado": "activo",
     "biografia": "Profesor universitario, investigador en IA aplicada."
@@ -58,10 +58,10 @@ db.usuarios.insertMany([
   {
     "_id": "6078901234",
     "nombre": "Ana Torres",
-    "email": "ana.torres@mail.com",
+    "email": "ana.torres@gmail.com",
     "rol": "estudiante",
     "pais": "Ecuador",
-    "fecha_registro": "2025-06-12",
+    "fecha_registro": { "$date": "2025-06-12T00:00:00Z" },
     "intereses": ["data science", "estadística"],
     "estado": "activo",
     "biografia": "Estudiante entusiasta de los datos y su aplicación en negocios."
@@ -69,10 +69,10 @@ db.usuarios.insertMany([
   {
     "_id": "7089012345",
     "nombre": "José Ramírez",
-    "email": "jose.ramirez@mail.com",
+    "email": "jose_ramirez@yahoo.com",
     "rol": "profesor",
     "pais": "Perú",
-    "fecha_registro": "2025-02-20",
+    "fecha_registro": { "$date": "2025-02-20T00:00:00Z" },
     "intereses": ["cloud computing", "devops"],
     "estado": "activo",
     "biografia": "Especialista en arquitecturas en la nube y metodologías ágiles."
@@ -80,10 +80,10 @@ db.usuarios.insertMany([
   {
     "_id": "8090123456",
     "nombre": "Valentina Castro",
-    "email": "valentina.castro@mail.com",
+    "email": "valentinacastro@yahoo.com",
     "rol": "estudiante",
     "pais": "Uruguay",
-    "fecha_registro": "2025-07-05",
+    "fecha_registro": { "$date": "2025-07-05T00:00:00Z" },
     "intereses": ["programación móvil", "flutter"],
     "estado": "activo",
     "biografia": "Aprendiendo a crear apps innovadoras y funcionales."
@@ -91,10 +91,10 @@ db.usuarios.insertMany([
   {
     "_id": "9101234567",
     "nombre": "Luis Hernández",
-    "email": "luis.hernandez@mail.com",
+    "email": "luis.hernandez@gmail.com",
     "rol": "profesor",
     "pais": "México",
-    "fecha_registro": "2025-01-10",
+    "fecha_registro": { "$date": "2025-01-10T00:00:00Z" },
     "intereses": ["big data", "etl", "desarrollo web"],
     "estado": "activo",
     "biografia": "Profesor con experiencia en procesamiento de grandes volúmenes de datos."
@@ -102,10 +102,10 @@ db.usuarios.insertMany([
   {
     "_id": "1012345678",
     "nombre": "Camila Rojas",
-    "email": "camila.rojas@mail.com",
+    "email": "camila_rojas@outlook.com",
     "rol": "estudiante",
     "pais": "Colombia",
-    "fecha_registro": "2025-08-01",
+    "fecha_registro": { "$date": "2025-08-01T00:00:00Z" },
     "intereses": ["python", "automatización"],
     "estado": "activo",
     "biografia": "Amante de la programación y la eficiencia en procesos."
@@ -113,10 +113,10 @@ db.usuarios.insertMany([
   {
     "_id": "1113456789",
     "nombre": "Ricardo Silva",
-    "email": "ricardo.silva@mail.com",
+    "email": "ricardo.silva@yahoo.com",
     "rol": "profesor",
     "pais": "Chile",
-    "fecha_registro": "2025-03-30",
+    "fecha_registro": { "$date": "2025-03-30T00:00:00Z" },
     "intereses": ["redes neuronales", "deep learning"],
     "estado": "activo",
     "biografia": "Investigador y docente en inteligencia artificial avanzada."
@@ -124,10 +124,10 @@ db.usuarios.insertMany([
   {
     "_id": "1214567890",
     "nombre": "Paula Méndez",
-    "email": "paula.mendez@mail.com",
+    "email": "paula.mendez@yahoo.com",
     "rol": "estudiante",
     "pais": "Bolivia",
-    "fecha_registro": "2025-07-15",
+    "fecha_registro": { "$date": "2025-07-15T00:00:00Z" },
     "intereses": ["bases de datos", "sql"],
     "estado": "activo",
     "biografia": "Apasionada por la organización de la información."
@@ -135,10 +135,10 @@ db.usuarios.insertMany([
   {
     "_id": "1315678901",
     "nombre": "Julián Herrera",
-    "email": "julian.herrera@mail.com",
+    "email": "julianherre@gmail.com",
     "rol": "estudiante",
     "pais": "Venezuela",
-    "fecha_registro": "2025-05-25",
+    "fecha_registro": { "$date": "2025-05-25T00:00:00Z" },
     "intereses": ["java", "backend"],
     "estado": "activo",
     "biografia": "Interesado en el desarrollo de sistemas robustos."
@@ -146,10 +146,10 @@ db.usuarios.insertMany([
   {
     "_id": "1416789012",
     "nombre": "Gabriela Paredes",
-    "email": "gabriela.paredes@mail.com",
+    "email": "gabriela.paredes@gmail.com",
     "rol": "estudiante",
     "pais": "Costa Rica",
-    "fecha_registro": "2025-06-29",
+    "fecha_registro": { "$date": "2025-06-29T00:00:00Z" },
     "intereses": ["ciencia de datos", "r"],
     "estado": "activo",
     "biografia": "Curiosa por descubrir patrones en los datos."
@@ -157,13 +157,12 @@ db.usuarios.insertMany([
   {
     "_id": "1517890123",
     "nombre": "Diego Sánchez",
-    "email": "diego.sanchez@mail.com",
+    "email": "diego.sanchez@gmail.com",
     "rol": "profesor",
     "pais": "Colombia",
-    "fecha_registro": "2025-04-05",
+    "fecha_registro": { "$date": "2025-04-05T00:00:00Z" },
     "intereses": ["seguridad informática", "criptografía"],
     "estado": "activo",
     "biografia": "Docente con trayectoria en seguridad digital y encriptación."
   }
 ]
-)
