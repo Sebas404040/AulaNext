@@ -2,21 +2,21 @@
   <img src="./Readme_images/AulaNext_logo.png" alt="logo_AulaNext" width="250"/>
 </p>
 
-# AulaNext
+# ➡️ AulaNext
 
 **AulaNext** es una plataforma de educación en línea diseñada para conectar estudiantes y profesores en un entorno digital accesible, organizado y moderno. El proyecto está pensado como una aplicación web educativa en la que los usuarios pueden registrarse, inscribirse en cursos y avanzar en su proceso de aprendizaje de manera estructurada.
 
 AulaNext requiere el diseño de un modelo de base de datos integral que permita gestionar de forma eficiente cursos, lecciones, usuarios, profesores y sugerencias. Este modelo debe estar optimizado para responder a las necesidades del sistema y soportar la estructura completa de la plataforma.
 
-## Modelo conceptual propuesto
+## 🧱 Modelo conceptual propuesto
 
 <p align="center">
   <img src="./Readme_images/AulaNext%20Diagrama-conceptual%20(3).png" alt="modelo_conceptual" width="600"/>
 </p>
 
-## Colecciones determinadas
+## 💿 Colecciones determinadas
 
-### Usuarios
+### 🫂 Usuarios
 
 La colección usuarios almacena la información básica de las personas que interactúan con la plataforma. Aquí se registran tanto estudiantes como profesores, junto con sus datos personales, credenciales de acceso y rol dentro del sistema.
 
@@ -55,7 +55,7 @@ La colección usuarios almacena la información básica de las personas que inte
 
 ```
 
-### Cursos
+### 📑 Cursos
 
 Esta colección almacena la información de los cursos disponibles en la plataforma, incluyendo sus lecciones y recursos.
 
@@ -121,7 +121,7 @@ Esta colección almacena la información de los cursos disponibles en la platafo
 
 ```
 
-### Inscripciones
+### 📇 Inscripciones
 
 En esta colección se realizan las inscripciones que realizan los estudiantes a los cursos deseados por realizar.
 
@@ -154,7 +154,7 @@ En esta colección se realizan las inscripciones que realizan los estudiantes a 
 
 ```
 
-### Pagos
+### 💳 Pagos
 
 Colección donde se realizan los pagos de las inscripciones a los cursos hechas por lo estudiantes, los estuidantes que hayan hecho una inscripcion a un curso y hecho su pago, aparecerá en la colección de pagos
 
@@ -202,7 +202,7 @@ Colección donde se realizan los pagos de las inscripciones a los cursos hechas 
   }
 ```
 
-### Reseñas
+### 🗂️ Reseñas
 
 Esta colección almacena las reseñas que los usuarios dejan sobre los cursos en los que han participado. Contiene información sobre la calificación, comentarios y estado de la reseña.
 
@@ -234,7 +234,7 @@ Esta colección almacena las reseñas que los usuarios dejan sobre los cursos en
   },
 ```
 
-## Como crear la base de datos en MongoDB
+## 🏗️ Como crear la base de datos en MongoDB
 
 ### Creacion de base de datos y colecciones
 
@@ -264,6 +264,10 @@ Se ejecutan los comandos anteriores para la creación de las colecciones
 
 3. Ejecutar las inserciones:
 
+![project_structure](./Readme_images/project_structure.png)
+
+Aqui encontrará varios archivos, los archivos a ejecutar para las inserciones de datos son los que terminan en formato .JSON
+
 Se ejecutan los archivos JSON desde mongoCompass:
 
 - Primeramente se abre mongoCompass
@@ -280,11 +284,11 @@ Se ejecutan los archivos JSON desde mongoCompass:
 - si se elige la opción de importar archivo JSON, se abrirá el administrador de archivos donde se elige el archivo a insertar con sus registro.
 
 
-## Consultas con expresiones regulares
+## 🔎 Consultas con expresiones regulares
 
 En esta sección se presentan las consultas usando expresiones regulares utilizadas en cada una de las colecciones.
 
-### Usuarios
+### 🫂 Usuarios
 
 #### Usuarios con nombres compuestos por dos palabras
 
@@ -395,7 +399,7 @@ Filtra usuarios cuyos intereses terminen en “ción”, por ejemplo “educaci�
 
 <hr>
 
-### Cursos
+### 📑 Cursos
 
 #### Cursos que en sus lecciones tienen temas introductorios
 
@@ -528,7 +532,7 @@ Busca cursos cuyo título tenga exactamente tres palabras, sin importar mayúscu
 
 - Permite filtrar cursos con títulos cortos y concisos.
 
-### Inscripciones
+### 📇 Inscripciones
 
 #### Inscripciones a cursos de ciencias de datos o bases de datos
 
@@ -601,7 +605,7 @@ Filtra inscripciones a cursos cuyos IDs terminan en números impares (1, 3, 5, 7
 - Complementa la segmentación por número de ID par/impar.
 
 
-### Pagos
+### 💳 Pagos
 
 #### Pagos realizados por usuarios cuyo ID termina en "89"
 
@@ -676,7 +680,7 @@ Filtra pagos que fueron procesados por proveedores específicos como Stripe o Pa
 - Permite analizar o comparar transacciones según el proveedor de pago.
 
 
-### Reseñas
+### 🗂️ Reseñas
 
 #### Reseñas que contienen la palabra "excelente" o "recomendado"
 
@@ -752,6 +756,12 @@ Filtra reseñas cuyo comentario termina con un punto final (.).
 - Útil para análisis de estilo de escritura o consistencia en los comentarios.
 
 - Puede ayudar a detectar reseñas completas frente a comentarios incompletos.
+
+## ✅ Conclusión
+
+El desarrollo del proyecto permitió estructurar un modelo de base de datos en MongoDB que responde de manera eficiente a la gestión de usuarios, cursos y reseñas. El proceso de modelado se centró en garantizar la coherencia de los datos mediante identificadores únicos y relaciones bien definidas entre colecciones, lo que facilitó la organización y escalabilidad del sistema.
+
+Uno de los aspectos más destacados fue la incorporación de expresiones regulares (regex) en las consultas, lo que otorgó flexibilidad en la búsqueda de información textual dentro de los comentarios de los usuarios. Gracias a esto, fue posible identificar patrones de opinión, filtrar reseñas por palabras clave relevantes, reconocer intervalos de cursos específicos y detectar formatos de texto como puntuación al final de frases.
 
 
 
